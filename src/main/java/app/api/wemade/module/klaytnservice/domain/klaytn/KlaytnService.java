@@ -1,9 +1,9 @@
 package app.api.wemade.module.klaytnservice.domain.klaytn;
 
-import com.klaytn.caver.methods.response.Transaction.TransactionData;
+import com.klaytn.caver.methods.response.Transaction;
 
 public interface KlaytnService {
 
-    TransactionData getTransaction(String txHash);
+    Transaction getTransaction(String txHash);
 
 }

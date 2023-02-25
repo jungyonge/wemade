@@ -25,7 +25,7 @@ spring:
 
 logging:
   level:
-    moais: debug
+    wemade: debug
 
 server:
   error:

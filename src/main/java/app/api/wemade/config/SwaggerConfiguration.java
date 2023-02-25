@@ -20,9 +20,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfiguration {
 
-    private static final String API_NAME = "모아이스 TODOLIST API";
+    private static final String API_NAME = "클레이튼 TX API";
     private static final String API_VERSION = "0.0.1";
-    private static final String API_DESCRIPTION = "모아이스 과제테스트 TODOLIST API";
+    private static final String API_DESCRIPTION = "클레이튼 TX API";
 
     @Bean
     public Docket api() {

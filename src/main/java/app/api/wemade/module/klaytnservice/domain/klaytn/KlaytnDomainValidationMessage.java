@@ -8,9 +8,9 @@ import org.springframework.http.HttpStatus;
 
 @Getter
 @AllArgsConstructor
-public enum TransactionDomainValidationMessage implements ExplainableMessage {
+public enum KlaytnDomainValidationMessage implements ExplainableMessage {
 
-    TODO_LIST_NOT_FOUND(1_0001, "사용자가 존재하지 않습니다."),
+    NOT_EXIST_TRANSACTION(1_0001, "트랜잭션이 존해하지 않습니다."),
 
     ;
 
@@ -18,7 +18,7 @@ public enum TransactionDomainValidationMessage implements ExplainableMessage {
     private final String message;
     private final HttpStatus status;
 
-    TransactionDomainValidationMessage(int code, String message) {
+    KlaytnDomainValidationMessage(int code, String message) {
         this.code = code;
         this.message = message;
         this.status = HttpStatus.BAD_REQUEST;

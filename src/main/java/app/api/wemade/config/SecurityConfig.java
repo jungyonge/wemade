@@ -66,7 +66,7 @@ public class SecurityConfig {
             .and()
             .authorizeRequests()
             .antMatchers("/api/v1/user/signup", "/api/v1/authorization/login",
-                "/api/v1/authorization/jwt/reissue","/api/v1/klaytn").permitAll()
+                "/api/v1/authorization/jwt/reissue").permitAll()
 
             .anyRequest().authenticated();
 
